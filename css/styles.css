@@ -1,0 +1,105 @@
+body{
+	/* background: #1c63f7; */
+}
+.content-area {
+	padding: 10% 0;
+}
+.box.animate .content {
+    transform: rotateY(180deg);
+}
+.box,
+.front, 
+.back {
+	width: 345px;
+	height: 200px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+.content {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+    transform: rotateY(180deg);
+    
+}
+
+.back-content {
+	padding: 120px 5px;
+}
+
+.back-content h2 {
+	/* font-family: 'Arizonia', cursive; */
+	font-size: 40px;
+  
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.img-1 {
+    background: url(img/1.jpg);
+    background-size: cover;
+	background-position: center center;
+}
+
+.img-2 {
+    background: url(img/2.jpg);
+    background-size: cover;
+	background-position: center center;
+}
+
+.img-3 {
+    background: url(img/3.jpg);
+    background-size: cover;
+	background-position: center center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.box, .front, .back {
+		width: 400px;
+		margin-bottom: 30px;
+	}
+	.back-content {
+		padding: 120px 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.box, .front, .back {
+		width: 400px;
+		margin-bottom: 30px;
+	}
+	.back-content {
+		padding: 100px 5px;
+	}
+}
+

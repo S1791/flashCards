@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card flip on click</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+<body>
+  
+<div class="content-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div class="box">
+          <div class="content">
+              <div class="front img-1"> 
+                  <!-- front content -->
+                   <h2>Svenska</h2>
+                   <p id="se"></p>
+                   
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <!-- <h2>Product Name</h2> -->
+                  <h2>Turkiska</h2>
+                  <p id="tr"></p>
+                </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- 
+<script>
+    $('.box .content').click(function() {
+	$(this).closest('.box').toggleClass('animate');
+    $(this).css('transform, rotateY(180deg)');
+}); -->
+
+</script>
+<script src="src/onClick.js"></script>
+<script src="src/arithmeticWords.js"></script>
+</body>
+</html>
